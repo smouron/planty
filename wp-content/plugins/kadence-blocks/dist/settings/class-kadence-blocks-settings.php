@@ -55,6 +55,7 @@ class Kadence_Blocks_Settings {
 		if ( is_admin() ) {
 			add_action( 'admin_menu', array( $this, 'add_menu' ) );
 			add_filter( 'plugin_action_links_kadence-blocks/kadence-blocks.php', array( $this, 'add_settings_link' ) );
+			add_action( 'in_plugin_update_message-kadence-blocks/kadence-blocks.php', array( $this, 'plugin_update_message' ), 10, 2 );
 		}
 		add_action( 'wp_ajax_kadence_blocks_activate_deactivate', array( $this, 'ajax_blocks_activate_deactivate' ), 10, 0 );
 		add_action( 'wp_ajax_kadence_blocks_save_config', array( $this, 'ajax_blocks_save_config' ), 10, 0 );
@@ -68,6 +69,20 @@ class Kadence_Blocks_Settings {
 		add_action( 'admin_head-post.php', array( $this, 'admin_editor_width' ), 100 );
 		add_action( 'admin_head-post-new.php', array( $this, 'admin_editor_width' ), 100 );
 		add_action( 'kadence_blocks_dash_side_panel_pro', array( $this, 'admin_pro_kadence_notice' ), 10 );
+	}
+	/**
+	 * Add an update message if in the readme.txt
+	 *
+	 * @param array $data An array of plugin metadata.
+	 * @param object $response An object of metadata about the available plugin update.
+	 */
+	public function plugin_update_message( $data, $response ) {
+		if ( isset( $data['upgrade_notice'] ) ) {
+			printf(
+				'<div class="update-message">%s</div>',
+				wpautop( $data['upgrade_notice'] )
+			);
+		}
 	}
 	/**
 	 * Add inline css editor width

@@ -4,7 +4,7 @@ Tags: gutenberg, blocks, page builder, google fonts, dual buttons, svg icons, ed
 Donate link: https://www.kadencewp.com/about-us/
 Requires at least: 5.9
 Tested up to: 6.1
-Stable tag: 2.4.22
+Stable tag: 2.4.23
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,6 +75,10 @@ Install the plugin into the `/wp-content/plugins/` folder, and activate it.
 6. Editor Width settings inside Gutenberg
 
 == Changelog ==
+
+= 2.4.23 =
+Release Date: February 20th, 2022
+* Add: Update notice in prep for 3.0 + release.
 
 = 2.4.22 =
 Release Date: November 17th, 2022
@@ -1527,3 +1531,6 @@ You can also set the block defaults.
 
 = 1.0.0 =
 * Initial Release.
+
+== Upgrade Notice ==
+Kadence Blocks 3.0+ is a huge update, we suggest testing thoroughly after updating.
