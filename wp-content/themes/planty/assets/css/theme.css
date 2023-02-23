@@ -40,7 +40,7 @@ body * {
 }
 
 
-/* Page contact */
+/* Positions relatives des images de la page contact */
 .picture1-contact{
 	top: 0px;
 	left: 0px;
@@ -54,4 +54,29 @@ body * {
 .picture3-contact{
 	bottom: 60px;
 	left: -50px;
+}
+
+/* Configuration bouton page commande */
+
+#fluentform_3 h2,
+#fluentform_3 h3  {
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+#fluentform_3 button {
+	padding: 15px 50px 15px 50px;
+	margin-bottom: 60px;
+}
+
+#fluentform_3 input[type=text],
+#fluentform_3 input[type=email] {	
+	height: 70px;
+	border-radius: 7px;
+	margin: 10px 0 25px 0;
+	
+}
+
+.input-commande {
+	width: 85%;
 }
