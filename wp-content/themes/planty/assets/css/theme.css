@@ -1,0 +1,57 @@
+/* Définition des polices personnalisées */
+@font-face {
+  font-family: 'Syne';
+  src: url('../fonts/Syne-VariableFont_wght.ttf') format('truetype');
+}
+
+body * {
+	font-family: 'Syne','Times New Roman', Times, serif;
+}
+
+.ast-plain-container.ast-no-sidebar #primary {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/*  */
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+
+/* HEADER */
+
+/* Surcharge d'un style bouton sur le lien commande */
+#menu-item-16 {
+	background-color: #E0B9B4;
+	transition: 0.45s ease;
+}
+
+#menu-item-16:hover {
+	background-color: #C02E44;
+}
+
+#menu-item-16 a {
+	color: #FFFFFF;
+}
+
+
+/* Page contact */
+.picture1-contact{
+	top: 0px;
+	left: 0px;
+}
+
+.picture2-contact{
+	bottom: 0px;
+	right: 40px;
+}
+
+.picture3-contact{
+	bottom: 60px;
+	left: -50px;
+}
