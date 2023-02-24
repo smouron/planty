@@ -10,9 +10,87 @@ function theme_enqueue_styles() {
 //  Chagerment du style personnalisé pour le theme
  wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/assets/css/theme.css' );
 
+ //  Chagerment du style personnalisé pour le shortcode form_order
+  wp_enqueue_style( 'form-order-shortcode', get_stylesheet_directory_uri() . '/assets/css/form-order-shortcode.css' );
+
 }
 
-/* HEADER */
+// _____________________
+// 
+//  AJOUT DE SHORTCODES
+// 
+// _____________________
+
+
+// On dit à wordpress que l'on ajoute le shortcode 'form_order'
+add_shortcode('form_order', 'form_order_func');
+
+// La fonction form_order_func génère le html retourné par le shortcode
+function form_order_func($atts) {
+    
+    // On récupère les données mises sur le shortcode
+    $atts = shortcode_atts(array (
+        'src' => ''
+    ), $atts, 'form_order');
+
+    // On commence à récupérer le flux d'information
+    ob_start();
+
+    if ($atts['src'] != "") {
+        ?>
+
+        <div class="form-order">
+            <figure class="figure-order">
+                <img class="image-order" src="<?= $atts['src'] ?>" alt="Image commandes">
+            </figure>
+            <form class="quantity">
+                <div class="relative">
+                    <input class="order-quantity" type="number" value="0" min="0" max="100" />
+                    <button class="btn-more btn-quantity" type="submit">+</button>
+                    <input type="submit" class="btn-less btn-quantity" value="-" />
+                </div>
+                <input type="submit" class="btn-ok" value="Ok" />
+            </form>
+        </div>
+
+        <?php
+    } else {
+        ?>
+
+        <div id="form-order" class="form-order">
+            <form class="quantity">
+                <div class="relative">
+                    <input class="order-quantity" type="number" value="0" min="0" max="100" />
+                    <button class="btn-more btn-quantity" type="submit">+</button>
+                    <input type="submit" class="btn-less btn-quantity" value="-" />
+                </div>
+                <input type="submit" class="btn-ok" value="Ok" />
+            </form>
+        </div>
+        
+        <?php
+    }
+    
+
+    // On arrête de récupérer le flux d'information et on le stock dans la fonction $output
+    $output = ob_get_contents();
+
+    // On nettoie le flux
+    ob_end_clean();
+
+    // On retourne la code HTML à afficher
+    return $output;
+}
+
+
+
+// __________________
+// 
+//   AJOUT DE HOOKS
+// 
+// __________________
+
+/* MODIFICATION DU HEADER */
 
 /**
  * Ajout du lien Admin dans le header quand l'opérateur est connecté

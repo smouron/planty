@@ -5,78 +5,89 @@
 }
 
 body * {
-	font-family: 'Syne','Times New Roman', Times, serif;
+  font-family: 'Syne', 'Times New Roman', Times, serif;
 }
 
 .ast-plain-container.ast-no-sidebar #primary {
-	margin-top: 0px;
-	margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /*  */
 .relative {
-	position: relative;
+  position: relative;
 }
 
 .absolute {
-	position: absolute;
+  position: absolute;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-black {
+	color: black;
+}
+
+
+/* Page CONTACT */
+
+/* Positions relatives des images */
+.picture1-contact {
+  top: 0px;
+  left: 0px;
+}
+
+.picture2-contact {
+  bottom: 0px;
+  right: 40px;
+}
+
+.picture3-contact {
+  bottom: 60px;
+  left: -50px;
+}
+
+/* page COMMANDE */
+
+/* Formulaire principal */
+
+#fluentform_3 h2,
+#fluentform_3 h3 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+#fluentform_3 button {
+  padding: 15px 50px 15px 50px;
+  margin-bottom: 60px;
+}
+
+#fluentform_3 input[type='text'],
+#fluentform_3 input[type='email'] {
+  height: 70px;
+  border-radius: 7px;
+  margin: 10px 0 25px 0;
+}
+
+.input-commande {
+  width: 85%;
+}
 
 /* HEADER */
 
 /* Surcharge d'un style bouton sur le lien commande */
 #menu-item-16 {
-	background-color: #E0B9B4;
-	transition: 0.45s ease;
+  background-color: #e0b9b4;
+  transition: 0.45s ease;
 }
 
 #menu-item-16:hover {
-	background-color: #C02E44;
+  background-color: #c02e44;
 }
 
 #menu-item-16 a {
-	color: #FFFFFF;
-}
-
-
-/* Positions relatives des images de la page contact */
-.picture1-contact{
-	top: 0px;
-	left: 0px;
-}
-
-.picture2-contact{
-	bottom: 0px;
-	right: 40px;
-}
-
-.picture3-contact{
-	bottom: 60px;
-	left: -50px;
-}
-
-/* Configuration bouton page commande */
-
-#fluentform_3 h2,
-#fluentform_3 h3  {
-	color: #FFFFFF;
-	font-weight: 700;
-}
-
-#fluentform_3 button {
-	padding: 15px 50px 15px 50px;
-	margin-bottom: 60px;
-}
-
-#fluentform_3 input[type=text],
-#fluentform_3 input[type=email] {	
-	height: 70px;
-	border-radius: 7px;
-	margin: 10px 0 25px 0;
-	
-}
-
-.input-commande {
-	width: 85%;
+  color: #ffffff;
 }

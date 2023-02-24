@@ -1,0 +1,86 @@
+/* page COMMANDE */
+
+/* Menu avec saisie quantités */
+div .form-order {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+div .figure-order {
+  margin: 0;
+}
+
+div .image-order {
+  width: 193px;
+}
+
+div .quantity {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+div .order-quantity {
+  position: relative;
+  width: 82px;
+  height: 56px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  padding-right: 5px;
+  font-family: 'Inter', 'Times New Roman', Times, serif;
+  text-align: center;
+  border-radius: 7px;
+  z-index: 1;
+}
+
+div .btn-quantity {
+  width: 31px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+}
+
+div .btn-more {
+  position: absolute;
+  border-bottom: solid 2px #ffffff;
+  border-left: solid 1px #ffffff;
+  border-radius: 0 7px 0 0;
+  top: 0;
+  left: 52px;
+  z-index: 5;
+}
+
+div .btn-less {
+  position: absolute;
+  border-top: solid 2px #ffffff;
+  border-left: solid 1px #ffffff;
+  border-radius: 0 0 7px 0;
+  bottom: 0;
+  left: 52px;
+  z-index: 5;
+}
+
+div .btn-ok {
+  width: 100px;
+  height: 56px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+/* #form-order.btn-more:hover,
+#form-order.btn-less:hover,
+#form-order.btn-ok:hover:hover {
+  background-color: #c02e44;
+  border: solid 1px #c02e44;
+} */
