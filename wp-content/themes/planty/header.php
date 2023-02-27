@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 >
 	<?php
 
-	astra_header_before();
+	// astra_header_before();
 
 	astra_header();
 

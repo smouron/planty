@@ -83,6 +83,44 @@ function form_order_func($atts) {
 }
 
 
+add_shortcode('css_separator', 'css_separator_func');
+function css_separator_func($atts) {
+    $atts = shortcode_atts(array (
+        'height' => '',
+        'color' => '',
+        'color2' => ''
+    ), $atts, 'css_separator');
+
+    if ($atts['height'] == "") {
+        $atts['height'] = '20';
+    }
+    
+    if ($atts['color'] == "") {
+        $atts['color'] = '#ECE2DA';
+    }
+    
+    if ($atts['color2'] == "") {
+        $atts['color2'] = $atts['color'];
+    }
+
+    // On commence à récupérer le flux d'information
+    ob_start();
+    ?>
+
+    <div style="width: 100%; height: <?= $atts['height'] ?>px; background-color: <?= $atts['color2'] ?>; border-radius: 0 0 50% 50%; margin-bottom: 20px;"> 
+        <div style="width: 100%; height: <?= $atts['height']-10 ?>px; background-color: <?= $atts['color'] ?>; border-radius: 0 0 50% 50%; margin-bottom: 20px;"></div> 
+    </div> 
+
+    <?php
+    // On arrête de récupérer le flux d'information et on le stock dans la fonction $output
+    $output = ob_get_contents();
+
+    // On nettoie le flux
+    ob_end_clean();
+
+    return $output;
+}
+
 
 // __________________
 // 
@@ -117,7 +155,7 @@ function prefix_add_menu_item ( $items, $args ) {
             // On ajoute au tableau le dernier élément de la liste
             $items_array[] = $items;
             // On insère le lien 'Admin' à la position indiquée (ici 1) dans le tableau.
-            array_splice($items_array, 1, 0, '<li class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link" href="'. get_permalink() . 'wp-admin">Admin</a></li>'); // insert custom item after 9th item one
+            array_splice($items_array, 1, 0, '<li class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link" href="http://127.0.0.1/planty/wp-admin/">Admin</a></li>'); // insert custom item after 9th item one
             // On retransforme le tableau en liste d'items
             $items = implode('', $items_array);
         }

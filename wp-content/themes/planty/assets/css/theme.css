@@ -28,9 +28,45 @@ body * {
 }
 
 .color-black {
-	color: black;
+  color: black;
 }
 
+.w100 {
+	width: 100%;
+}
+
+.w80 {
+	width: 80%;
+	text-align: center;
+}
+
+.zindex1 {
+	Z-Index:1;
+}
+
+.zindex2 {
+	Z-Index:2;
+}
+
+.zindex99 {
+	Z-Index:99;
+}
+
+/* HEADER */
+
+/* Surcharge d'un style bouton sur le lien commande */
+.main-header-menu li:last-child {
+  background-color: #e0b9b4;
+  transition: 0.45s ease;
+}
+
+.main-header-menu li:last-child:hover {
+  background-color: #c02e44;
+}
+
+.main-header-menu li:last-child a {
+  color: #ffffff !important;
+}
 
 /* Page CONTACT */
 
@@ -74,20 +110,4 @@ body * {
 
 .input-commande {
   width: 85%;
-}
-
-/* HEADER */
-
-/* Surcharge d'un style bouton sur le lien commande */
-#menu-item-16 {
-  background-color: #e0b9b4;
-  transition: 0.45s ease;
-}
-
-#menu-item-16:hover {
-  background-color: #c02e44;
-}
-
-#menu-item-16 a {
-  color: #ffffff;
 }
