@@ -8,10 +8,18 @@ body * {
   font-family: 'Syne', 'Times New Roman', Times, serif;
 }
 
-.ast-plain-container.ast-no-sidebar #primary {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.site-main > article {
+	padding-top: 0 !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	padding-bottom: 0 !important;
+	
 }
+
+.site-primary-header-wrap {
+	padding-right: 0;
+	padding-left: 0;
+	}
 
 /*  */
 .relative {
@@ -32,40 +40,50 @@ body * {
 }
 
 .w100 {
-	width: 100%;
+  width: 100%;
 }
 
 .w80 {
-	width: 80%;
-	text-align: center;
+  width: 80%;
+  text-align: center;
 }
 
 .zindex1 {
-	Z-Index:1;
+  z-index: 1;
 }
 
 .zindex2 {
-	Z-Index:2;
+  z-index: 2;
 }
 
 .zindex99 {
-	Z-Index:99;
+  z-index: 99;
 }
 
 /* HEADER */
+/* Surcharge bouton Admin */ 
+.menu-admin {
+	padding-right: 60px;
+}
 
-/* Surcharge d'un style bouton sur le lien commande */
-.main-header-menu li:last-child {
+#ast-hf-mobile-menu .menu-admin {
+	padding-right: 60px;
+	padding-left: 20px;
+}
+
+/* Surcharge d'un style bouton sur le lien commande */ 
+.main-header-menu > li:last-child { 
   background-color: #e0b9b4;
   transition: 0.45s ease;
 }
 
-.main-header-menu li:last-child:hover {
-  background-color: #c02e44;
+.main-header-menu > li:last-child a:hover  {
+  background-color: #c02e44 !important;
 }
 
 .main-header-menu li:last-child a {
   color: #ffffff !important;
+  background-color: #e0b9b4 !important;
 }
 
 /* Page CONTACT */
@@ -73,7 +91,7 @@ body * {
 /* Positions relatives des images */
 .picture1-contact {
   top: 0px;
-  left: 0px;
+  left: 100px;
 }
 
 .picture2-contact {
@@ -87,6 +105,9 @@ body * {
 }
 
 /* page COMMANDE */
+.btn-ok {
+  padding: 15px 20px 15px 20px !important;
+}
 
 /* Formulaire principal */
 
