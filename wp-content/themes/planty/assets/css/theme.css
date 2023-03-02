@@ -9,17 +9,16 @@ body * {
 }
 
 .site-main > article {
-	padding-top: 0 !important;
-	padding-right: 0 !important;
-	padding-left: 0 !important;
-	padding-bottom: 0 !important;
-	
+  padding-top: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .site-primary-header-wrap {
-	padding-right: 0;
-	padding-left: 0;
-	}
+  padding-right: 0;
+  padding-left: 0;
+}
 
 /*  */
 .relative {
@@ -33,6 +32,21 @@ body * {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap !important;
+}
+
+.center {
+  justify-content: center;
+  margin: auto;
 }
 
 .color-black {
@@ -61,23 +75,23 @@ body * {
 }
 
 /* HEADER */
-/* Surcharge bouton Admin */ 
+/* Surcharge bouton Admin */
 .menu-admin {
-	padding-right: 60px;
+  padding-right: 60px;
 }
 
 #ast-hf-mobile-menu .menu-admin {
-	padding-right: 60px;
-	padding-left: 20px;
+  padding-right: 60px;
+  padding-left: 20px;
 }
 
-/* Surcharge d'un style bouton sur le lien commande */ 
-.main-header-menu > li:last-child { 
+/* Surcharge d'un style bouton sur le lien commande */
+.main-header-menu > li:last-child {
   background-color: #e0b9b4;
   transition: 0.45s ease;
 }
 
-.main-header-menu > li:last-child a:hover  {
+.main-header-menu > li:last-child a:hover {
   background-color: #c02e44 !important;
 }
 
@@ -86,7 +100,11 @@ body * {
   background-color: #e0b9b4 !important;
 }
 
-/* Page CONTACT */
+/* ----------------- */
+/*                   */
+/*   page CONTACT    */
+/*                   */
+/* ----------------- */
 
 /* Positions relatives des images */
 .picture1-contact {
@@ -104,31 +122,176 @@ body * {
   left: -50px;
 }
 
-/* page COMMANDE */
+/* ----------------- */
+/*                   */
+/*   page COMMANDE   */
+/*                   */
+/* ----------------- */
+
+/* Formulaire quantité */
 .btn-ok {
   padding: 15px 20px 15px 20px !important;
 }
 
-/* Formulaire principal */
+/*  **********************************  */
+/*                                      */
+/*       TESTS  CONTACT FORM 7          */
+/*                                      */
+/*  **********************************  */
 
-#fluentform_3 h2,
-#fluentform_3 h3 {
+/*   QUANTITES   */
+.container-order-quantity {
+  background-color: #3b8e46;
+  width: 193px;
+  height: 56px;
+}
+
+.container-order-quantity {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.container-order-quantity input[type='number'] {
+  border-radius: 7px;
+  position: relative;
+  width: 80px;
+  height: 56px;
+  padding-right: 0;
+  font-family: 'Inter', 'Times New Roman', Times, serif;
+}
+
+.container-order-quantity .contactform-btn-ok {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  height: 56px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
   color: #ffffff;
-  font-weight: 700;
+  background-color: #e0b9b4;
+  border-radius: 5px;
 }
 
-#fluentform_3 button {
-  padding: 15px 50px 15px 50px;
-  margin-bottom: 60px;
+.container-order-quantity .contactform-btn-quantity {
+  width: 32px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e0b9b4;
+  position: absolute;
+  left: 48px;
+  z-index: 5;
 }
 
-#fluentform_3 input[type='text'],
-#fluentform_3 input[type='email'] {
+.container-order-quantity .contactform-btn-more {
+  border-radius: 0 7px 0 0;
+  top: 0px;
+}
+
+.container-order-quantity .contactform-btn-less {
+  border-top: solid 2px #ffffff;
+  border-radius: 0 0 7px 0;
+  bottom: -8px;
+}
+
+.container-order-quantity .contactform-btn-quantity:hover,
+.container-order-quantity .contactform-btn-ok:hover {
+  background-color: #c02e44;
+}
+
+/*   INFORMATIONS   */
+.container-order-informations {
+  background-color: #3b8e46;
+}
+
+.container-order-informations h2,
+.container-order-informations label {
+  color: #ffffff;
+}
+
+.container-order-informations h2 {
+  padding-bottom: 20px;
+}
+
+.container-order-informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* gap: 30px; */
+  padding: 20px 0;
+  border-top: 1px solid #ffffff;
+}
+
+.container-order-informations input[type='text'],
+.container-order-informations input[type='email'] {
   height: 70px;
   border-radius: 7px;
-  margin: 10px 0 25px 0;
+  width: 390px;
+}
+.container-order-informations .informations-left,
+.container-order-informations .informations-right {
+  padding-top: 15px;
 }
 
-.input-commande {
-  width: 85%;
+.container-order-informations .informations-left {
+  padding-right: 30px;
+  border-right: 1px solid #ffffff;
+}
+
+.container-order-informations .informations-right {
+  padding-left: 30px;
+}
+
+.contactform-commander {
+  margin: auto;
+}
+
+/*  **********************************  */
+/*    Media query : max-width: 976px    */
+/*  **********************************  */
+@media only screen and (max-width: 976px) {
+  /* ----------------- */
+  /*                   */
+  /*   page CONTACT    */
+  /*                   */
+  /* ----------------- */
+
+  /* Positions relatives des images */
+  .picture1-contact {
+    top: -15px;
+    left: 20px;
+  }
+
+  /*  **********************************  */
+  /*                                      */
+  /*       TESTS  CONTACT FORM 7          */
+  /*                                      */
+  /*  **********************************  */
+  .container-order-fluentform .ff-t-container {
+    flex-direction: column;
+  }
+
+  .container-order-fluentform h2,
+  .container-order-fluentform label {
+    text-align: left;
+  }
+
+  .container-order-fluentform .ff-t-column-1 {
+    border-right: 0px solid #ffffff !important;
+  }
+
+  .container-order-fluentform .ff-t-column-1,
+  .container-order-fluentform .ff-t-column-2 {
+    width: 360px;
+    border-right: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
 }

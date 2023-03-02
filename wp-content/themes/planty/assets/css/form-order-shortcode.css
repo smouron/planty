@@ -46,12 +46,18 @@ div .btn-quantity {
   font-size: 15px;
   font-weight: 400;
   text-align: center;
+  background-color: #e0b9b4;
   color: #ffffff;
   padding: 0;
 }
 
+div .btn-quantity:hover {
+  background-color: #c02e44;
+}
+
 div .btn-more {
   position: absolute;
+  border: 0;
   border-bottom: solid 2px #ffffff;
   border-left: solid 1px #ffffff;
   border-radius: 0 7px 0 0;
@@ -62,6 +68,7 @@ div .btn-more {
 
 div .btn-less {
   position: absolute;
+  border: 0;
   border-top: solid 2px #ffffff;
   border-left: solid 1px #ffffff;
   border-radius: 0 0 7px 0;
@@ -78,10 +85,3 @@ div .btn-ok {
   font-weight: 400;
   border-radius: 5px;
 }
-
-/* #form-order.btn-more:hover,
-#form-order.btn-less:hover,
-#form-order.btn-ok:hover:hover {
-  background-color: #c02e44;
-  border: solid 1px #c02e44;
-} */

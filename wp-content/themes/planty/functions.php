@@ -46,8 +46,8 @@ function form_order_func($atts) {
             <form class="quantity">
                 <div class="relative">
                     <input class="order-quantity" type="number" value="0" min="0" max="100" />
-                    <input type="submit" class="btn-more btn-quantity" value="+" />
-                    <input type="submit" class="btn-less btn-quantity" value="-" />
+                    <input type="text" class="btn-more btn-quantity" value="+" />
+                    <input type="text" class="btn-less btn-quantity" value="-" />
                 </div>
                 <input type="submit" class="btn-ok" value="Ok" />
             </form>
@@ -61,8 +61,8 @@ function form_order_func($atts) {
             <form class="quantity">
                 <div class="relative">
                     <input class="order-quantity" type="number" value="0" min="0" max="100" />
-                    <input type="submit" class="btn-more btn-quantity" value="+" />
-                    <input type="submit" class="btn-less btn-quantity" value="-" />
+                    <input type="text" class="btn-more btn-quantity" value="+" />
+                    <input type="text" class="btn-less btn-quantity" value="-" />
                 </div>
                 <input type="submit" class="btn-ok" value="Ok" />
             </form>
