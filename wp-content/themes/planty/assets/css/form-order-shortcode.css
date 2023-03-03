@@ -13,6 +13,8 @@ div .figure-order {
   margin: 0;
 }
 
+/* Définition de la largeur de l'image qui est au dessus de la zone */
+/*     de saisi des quantiés si elle est chargée par le shortcode   */
 div .image-order {
   width: 193px;
 }
@@ -25,6 +27,7 @@ div .quantity {
   justify-content: center;
 }
 
+/* Configuration de l'imput numérique pour la saisie des quantités */
 div .order-quantity {
   position: relative;
   width: 82px;
@@ -40,6 +43,7 @@ div .order-quantity {
   z-index: 1;
 }
 
+/* On donne un style de bouton au + et - qui est rajouté sur l'imput numérique */
 div .btn-quantity {
   width: 31px;
   height: 30px;
@@ -77,7 +81,9 @@ div .btn-less {
   z-index: 5;
 }
 
+/* On donne un style différent des autres boutons du site */
 div .btn-ok {
+  padding: 15px 20px 15px 20px !important;
   max-width: 100px;
   width: 100%;
   height: 56px;

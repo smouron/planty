@@ -1,4 +1,4 @@
-/* Définition des polices personnalisées */
+/* Chargement de la font personnalisée */
 @font-face {
   font-family: 'Syne';
   src: url('../fonts/Syne-VariableFont_wght.ttf') format('truetype');
@@ -8,6 +8,8 @@ body * {
   font-family: 'Syne', 'Times New Roman', Times, serif;
 }
 
+/* Suppression du padding qui est mis par défaut sur les balises ARTICLE */
+/*   Pour avoir le site en plein écran (sans bordures blanches autour)   */
 .site-main > article {
   padding-top: 0 !important;
   padding-right: 0 !important;
@@ -15,12 +17,90 @@ body * {
   padding-bottom: 0 !important;
 }
 
+/* --------------- */
+/*                 */
+/*     HEADER      */
+/*                 */
+/* --------------- */
+
+/* Suppression du padding qui est mis par défaut sur le header que l'on utilise */
 .site-primary-header-wrap {
   padding-right: 0;
   padding-left: 0;
 }
 
-/*  */
+/* Surcharge du bouton Admin */
+.menu-admin {
+  padding-right: 60px;
+}
+
+#ast-hf-mobile-menu .menu-admin {
+  padding: 20px 60px 0 20px;
+}
+
+/* Surcharge du menu pour la version téléphone */
+#ast-hf-mobile-menu > li:last-child,
+#ast-hf-mobile-menu .menu-link,
+#ast-hf-mobile-menu .menu-admin  {
+  display: flex;
+  height: 60px;
+  background: #FFFFFF;
+}
+
+#ast-hf-mobile-menua:hover  {
+  color: #000000;
+}
+
+/* Surcharge au passage de la souri sur les liens du Header */
+.main-header-menu a {
+  font-size: 16px;	
+  font-weight: 400;
+  line-height: 19px;  
+}
+
+.main-header-menu a:hover  {
+  font-size: 13px;	
+  font-weight: 700;
+  line-height: 15px;
+  color: #000000;
+}
+
+/* Surcharge d'un style "bouton" sur le lien commande */
+.main-header-menu > li:last-child {
+  background-color: #e0b9b4;
+  transition: 0.45s ease;
+  width: 236px;
+  height: 80px;
+}
+
+.main-header-menu > li:last-child a {
+  font-size: 16px;	
+  font-weight: 700;
+  line-height: 19px; 
+}
+
+.main-header-menu > li:last-child a:hover {
+  background-color: #c02e44 !important;
+  font-size: 16px;	
+  font-weight: 700;
+  line-height: 19px; 
+}
+
+.main-header-menu li:last-child a {
+  color: #ffffff !important;
+  background-color: #e0b9b4 !important;
+}
+
+
+/* ----------------- */
+/*                   */
+/*   page CONTACT    */
+/*                   */
+/* ----------------- */
+
+
+/* Pour positionner les images en dehors du flux */
+/*       tout en restant dans leur contenair     */
 .relative {
   position: relative;
 }
@@ -29,84 +109,6 @@ body * {
   position: absolute;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.wrap {
-  flex-wrap: wrap !important;
-}
-
-.center {
-  justify-content: center;
-  margin: auto;
-}
-
-.color-black {
-  color: black;
-}
-
-.w100 {
-  width: 100%;
-}
-
-.w80 {
-  width: 80%;
-  text-align: center;
-}
-
-.zindex1 {
-  z-index: 1;
-}
-
-.zindex2 {
-  z-index: 2;
-}
-
-.zindex99 {
-  z-index: 99;
-}
-
-/* HEADER */
-/* Surcharge bouton Admin */
-.menu-admin {
-  padding-right: 60px;
-}
-
-#ast-hf-mobile-menu .menu-admin {
-  padding-right: 60px;
-  padding-left: 20px;
-}
-
-/* Surcharge d'un style bouton sur le lien commande */
-.main-header-menu > li:last-child {
-  background-color: #e0b9b4;
-  transition: 0.45s ease;
-}
-
-.main-header-menu > li:last-child a:hover {
-  background-color: #c02e44 !important;
-}
-
-.main-header-menu li:last-child a {
-  color: #ffffff !important;
-  background-color: #e0b9b4 !important;
-}
-
-/* ----------------- */
-/*                   */
-/*   page CONTACT    */
-/*                   */
-/* ----------------- */
-
-/* Positions relatives des images */
 .picture1-contact {
   top: 0px;
   left: 100px;
@@ -122,134 +124,23 @@ body * {
   left: -50px;
 }
 
-/* ----------------- */
-/*                   */
-/*   page COMMANDE   */
-/*                   */
-/* ----------------- */
 
-/* Formulaire quantité */
-.btn-ok {
-  padding: 15px 20px 15px 20px !important;
+/* ------------------ */
+/*                    */
+/*   page COMMANDE    */
+/*                    */
+/* ------------------ */
+
+/*   Utilisé pour Wrappé les ensembles saisie de quantité   */
+/* et garder ces élements centré sur la page après la Wrap  */
+/*                                                          */
+/*          Class ajoutée sur l'élément de la page          */
+.wrap {
+  flex-wrap: wrap !important;
 }
 
-/*  **********************************  */
-/*                                      */
-/*       TESTS  CONTACT FORM 7          */
-/*                                      */
-/*  **********************************  */
-
-/*   QUANTITES   */
-.container-order-quantity {
-  background-color: #3b8e46;
-  width: 193px;
-  height: 56px;
-}
-
-.container-order-quantity {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  text-align: center;
+.center {
   justify-content: center;
-}
-
-.container-order-quantity input[type='number'] {
-  border-radius: 7px;
-  position: relative;
-  width: 80px;
-  height: 56px;
-  padding-right: 0;
-  font-family: 'Inter', 'Times New Roman', Times, serif;
-}
-
-.container-order-quantity .contactform-btn-ok {
-  display: flex;
-  flex-direction: column;
-  width: 110px;
-  height: 56px;
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-  justify-content: center;
-  color: #ffffff;
-  background-color: #e0b9b4;
-  border-radius: 5px;
-}
-
-.container-order-quantity .contactform-btn-quantity {
-  width: 32px;
-  height: 30px;
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-  color: #ffffff;
-  background-color: #e0b9b4;
-  position: absolute;
-  left: 48px;
-  z-index: 5;
-}
-
-.container-order-quantity .contactform-btn-more {
-  border-radius: 0 7px 0 0;
-  top: 0px;
-}
-
-.container-order-quantity .contactform-btn-less {
-  border-top: solid 2px #ffffff;
-  border-radius: 0 0 7px 0;
-  bottom: -8px;
-}
-
-.container-order-quantity .contactform-btn-quantity:hover,
-.container-order-quantity .contactform-btn-ok:hover {
-  background-color: #c02e44;
-}
-
-/*   INFORMATIONS   */
-.container-order-informations {
-  background-color: #3b8e46;
-}
-
-.container-order-informations h2,
-.container-order-informations label {
-  color: #ffffff;
-}
-
-.container-order-informations h2 {
-  padding-bottom: 20px;
-}
-
-.container-order-informations {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* gap: 30px; */
-  padding: 20px 0;
-  border-top: 1px solid #ffffff;
-}
-
-.container-order-informations input[type='text'],
-.container-order-informations input[type='email'] {
-  height: 70px;
-  border-radius: 7px;
-  width: 390px;
-}
-.container-order-informations .informations-left,
-.container-order-informations .informations-right {
-  padding-top: 15px;
-}
-
-.container-order-informations .informations-left {
-  padding-right: 30px;
-  border-right: 1px solid #ffffff;
-}
-
-.container-order-informations .informations-right {
-  padding-left: 30px;
-}
-
-.contactform-commander {
   margin: auto;
 }
 
@@ -263,37 +154,11 @@ body * {
   /*                   */
   /* ----------------- */
 
-  /* Positions relatives des images */
+  /*        Positions relatives des images       */
+  /* On déplace l'image pour la version portable */
   .picture1-contact {
     top: -15px;
     left: 20px;
   }
   
  
-
-  /*  **********************************  */
-  /*                                      */
-  /*       TESTS  CONTACT FORM 7          */
-  /*                                      */
-  /*  **********************************  */
-  .container-order-fluentform .ff-t-container {
-    flex-direction: column;
-  }
-
-  .container-order-fluentform h2,
-  .container-order-fluentform label {
-    text-align: left;
-  }
-
-  .container-order-fluentform .ff-t-column-1 {
-    border-right: 0px solid #ffffff !important;
-  }
-
-  .container-order-fluentform .ff-t-column-1,
-  .container-order-fluentform .ff-t-column-2 {
-    width: 360px;
-    border-right: 0;
-    padding: 0;
-    margin-top: 30px;
-  }
-}
