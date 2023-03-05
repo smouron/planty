@@ -124,11 +124,32 @@ body * {
   left: -65px;
 }
 
+/* Formulaire de contact */ 
+#fluentform_1 label {
+  font-size: 20px;
+  font-weight: 400 !important;
+  line-height: 22px !important;
+}
+
+#fluentform_1 .ff-el-form-control {
+    border: 0 !important;
+}
+
+#fluentform_1 .bnt-envoyer {
+  padding: 20px 70px 20px 70px;
+  width: 198px;
+  height: 55px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
 /* ------------------ */
 /*                    */
 /*   page COMMANDE    */
 /*                    */
 /* ------------------ */
+
+/*   Zone des images  */
 
 /*   Utilisé pour Wrappé les ensembles saisie de quantité   */
 /* et garder ces élements centré sur la page après la Wrap  */
@@ -151,11 +172,8 @@ body * {
 	
 }
 
-  /* ------------------ */
-  /*                    */
-  /*   page COMMANDE    */
-  /*                    */
-  /* ------------------ */
+/*   Formulaires de commande  */
+/*   Partie commune au 2 parties du formulaire   */
 
 #fluentform_6 h2,
 #fluentform_6 h3 {
