@@ -136,7 +136,7 @@ body * {
 }
 
 #fluentform_1 .bnt-envoyer {
-  padding: 20px 70px 20px 70px;
+  /* padding: 20px 70px 20px 70px; */
   width: 198px;
   height: 55px;
   margin-top: 0;
