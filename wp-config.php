@@ -25,13 +25,13 @@
 define( 'DB_NAME', 'fgaa_planty' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'fgaa_sanoe' );
+define( 'DB_USER', 'fgaa_planty' );
 
 /** Mot de passe de la base de données MySQL. */
 define( 'DB_PASSWORD', 'QD4k-8rv0OfC4' );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', '127.0.0.1' );
+define( 'DB_HOST', 'localhost' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -53,14 +53,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '?cgF1|t`w^;}!bPEIoXO%K1d97Huvp[uP-%>D[uXoTc`z$o9D8`{P7=t`azN`n.3' );
-define( 'SECURE_AUTH_KEY',  'a^w):UGL`C/T%&HgrI/#CNa7;6C4(j]+iz>awvt29uoMv=!:U00YJWeMUH^v2h+ ' );
-define( 'LOGGED_IN_KEY',    '*U_KMj9dUXuozhJ,28A# 7j]p39A{#p-csApN}`,QJLNXWkns#O%jHdh=#hb<slB' );
-define( 'NONCE_KEY',        '+Voi!TB[+l^;qvLG67:W*/{lznjyW;P)4CW!.EP#Bi|>wj9O.H]_9&aRKz7+cL? ' );
-define( 'AUTH_SALT',        '(ZKkuMh/ X02dMkS7;)cKO)P|&=i|v9t(d`2D%h:5ndUo=yZeY9y|PPr29xNHUO9' );
-define( 'SECURE_AUTH_SALT', 'Ec>|)9PWIj/[MrC?S*3o*e&RRoTW_62zTf>C<Hi_O.{)X,_8]DC;;gBMxQZOPQ5l' );
-define( 'LOGGED_IN_SALT',   's$oE[>4e>y~Y)[+Hw[b#-wjydjIR~$3xGkksPq^fOp-TlB :Yg]s!m`1}a@(gdPc' );
-define( 'NONCE_SALT',       'w8y7HO.[y/;EdCTxQj@lgMX&/wZp#OA!MfVGe8lA>EfE1JoQ&qq;x-0rhCam`VVv' );
+define( 'AUTH_KEY',         'txbkFbSG?k)tR`_!fE,2zg%Vj!+(jaK<~:ItB%S|q[CZ%2Ky8$7ra.15!e`{Bb[.' );
+define( 'SECURE_AUTH_KEY',  '*>CPS-HZi4r4<=zL[eis-rpthQlJVohG-Mni6L19,7iPuJ?5rBrQu@.Q>EV3pHZ`' );
+define( 'LOGGED_IN_KEY',    'U?q|o9559wSEw;k,{u=i-M@;-j5^ccANa_;6 X-OfHOm;]rs>og=gUJl%l.n~5n{' );
+define( 'NONCE_KEY',        'iss>3yJvQ.xXVTnw3a cF%[~O]6&xv0o^wI%{nVglA5jn..7}%0P>YSZdZ~k`^HP' );
+define( 'AUTH_SALT',        '=}>{(Sb 1#-O@eM;`IO3LY)C12>16mN Z9 jJqJF%M$d_S;^Mn@`t)gVK.[VBWAl' );
+define( 'SECURE_AUTH_SALT', '4k{g:;G2hYZ}VM)Q_`OT.Nqcs<y7/YuFt|T!RZens}%MyB[;Ln*hRs}_J4$[ %IE' );
+define( 'LOGGED_IN_SALT',   '~`(` *R9oGQ9;?:4` x$b=e?/tAQ.N+XqahcsDj:$-:IE}V2j:Eg:6n:P.OIvH@H' );
+define( 'NONCE_SALT',       'Q^]/2?1MNZ<r;oj#XE/8hPz/*)WsCi_ bj35c4be(acx=NdA5H:Gx%_Z@6i3B(%C' );
 /**#@-*/
 
 /**
