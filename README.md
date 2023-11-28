@@ -1,15 +1,17 @@
 # Site vitrine PLANTY
 
-![2023-02-20_12h01_51](https://user-images.githubusercontent.com/117899919/224936123-c165d678-5254-40ba-8f30-c6bf97872f9d.png)
+![Bannière Planty](./banner-planty.png)
 
 ## Projet 6 : Personnaliser un thème WordPress pour une stratup avec HTML, CSS et Php
 
 ### Objectif et ressources
+
 Pour ce projet, je suis en charge de développer un site vitrine pour la société Planty (marque de boissons énergisantes à base de plantes).  
 On me demande de développer le site sur WordPress et d’utiliser de préférence Gutenberg pour la gestion des pages.
 Pour ce site il n'y aura que 4 pages : la page d'accueil, la page contact, la page commande et la page pour les mentions légales. Mais pour cette dernière page, il n'y a pas encore de texte, la page peut donc rester vide.
 
 En ressource, on me donne :
+
 <ul>
     <li><a href="https://www.figma.com/file/P19mvyz8EbozI4zlHJB7fy/Maquette-Planty-P6-Wordpress?node-id=0-1&t=iNwwNBiCNke2wMyD-0" target="_blank">la maquette Figma</a></li>
     <li><a href="https://www.figma.com/proto/P19mvyz8EbozI4zlHJB7fy/Maquette-Planty-P6-Wordpress?node-id=2%3A40&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A40" target="_blank">un prototype sur Figma</a></li>
@@ -27,6 +29,7 @@ En ressource, on me donne :
 </ul>
 
 ### Les choix retenus
+
 <ul>
     <li>Utilisation du thème <a href="https://fr.wordpress.org/themes/astra/" target="_blank">ASTRA</a>.</li>
     <li>Mise en place du plugin <a href="https://wordpress.org/plugins/fluentform/" target="_blank">Spectra</a> pour ajouter des blocs avancé à Gutemberg.</li>
@@ -37,5 +40,5 @@ En ressource, on me donne :
 </ul>
 
 ### Le site final
-<a href="https://www.sanoecreation.fr/OpenClassRooms/Planty/" target="_blank">![home](https://user-images.githubusercontent.com/117899919/224937787-33369076-e415-474a-84c5-246e82b32f1d.png)</a>
 
+<a href="https://planty.stephane-mouron.fr/" target="_blank">![Planty](./monitor-g9ceeb1f8d_640.png)</a>
